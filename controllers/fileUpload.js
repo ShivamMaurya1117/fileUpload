@@ -156,7 +156,7 @@ exports.imageSizeReducer = async(req, res) => {
      }
  
     //file format supported 
-    const response = await uploadFileToCloudinary(file,  "dataStorage", 50);
+    const response = await uploadFileToCloudinary(file,  "dataStorage", 80);
    
     //save entry in database
     const fileData = await File.create({
